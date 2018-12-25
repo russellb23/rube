@@ -5,7 +5,9 @@
 # Automatic: Plays sequentially in the order present in the directory         #
 # Shuffle: Plays song in random order                                         #
 # Choose: Create the playlist and play the songs in chosen order              #
-# Author: Russell Bert (C) Dec 2018                                           #
+# Author: Russell Bert Dec 2018                                               #
+# Usage: muplay <path_to_direcotry>                                           #
+# <path_to_directory> is where you have stored all your music files           #
 ###############################################################################
 # Import required modules
 import os, sys, random 
