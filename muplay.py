@@ -18,7 +18,7 @@ src = sys.argv[1]
 songs = listdir(str(src))
 # Prompt user for the mode of play
 mode = input("[M]anual/[A]utomatic/[S]huffle/[C]reate PL: \t")
-# Playing logic
+# Music playing mode logic
 if mode.lower() == 'm':
     count = 1
     while count <= len(songs):
@@ -27,13 +27,11 @@ if mode.lower() == 'm':
         song_id = input("Song ID: ")
         if song_id.lower() == 'q':
             sys.exit(0)
-        #song_play = subprocess.Popen(['mplayer', str(src)+songs[int(song_id)]])
         song_play = po(['mplayer', path.join(str(src), songs[int(song_id)])])
         song_play.wait()
         count += 1
 elif mode.lower() == 'a':
     for song in songs:
-        #song_play = subprocess.Popen(['mplayer', str(src)+'/'+str(song)])
         song_play = po(['mplayer', path.join(str(src), str(song))])
         song_play.wait()
 elif mode.lower() == 's':
