@@ -60,7 +60,7 @@ elif mode.lower() == 'c':
         song_play.wait()
 else:
     print("Please choose a mode")
-# Logic execution
+# Execution Logic
 if __name__ == '__main__':
     try:
         main()
