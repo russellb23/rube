@@ -6,6 +6,7 @@
 # Shuffle: Plays song in random order                                         #
 # Choose: Create the playlist and play the songs in chosen order              #
 # Author: Russell Bert (C) Dec 2018                                           #
+# Usage: muplay <path_to_direcotry> # where your music files are located      #
 ###############################################################################
 # Import required modules
 import os, sys, random 
